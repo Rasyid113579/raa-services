@@ -15,9 +15,10 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Righteous&display=swap'
         }, 
         {
+          /* FOR SET UP IMG ICON */
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/favicon.ico'
+          href: '/tokopedia 1.png'
         },
         {
           rel: 'stylesheet',
