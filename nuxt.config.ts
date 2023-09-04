@@ -2,11 +2,11 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Delizioso Tangerang",
+      title: "RAA Services | Travel Insurance & Visa",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Delizioso Tangerang' },
+        { hid: 'description', name: 'description', content: 'RAA Services | Travel Insurance & Visa' },
         { name: 'format-detection', content: 'telephone=no'}
       ],
       link: [
