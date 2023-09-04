@@ -27,13 +27,16 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#persyaratan">Syarat</a>
                         </li>
+                        <li class="nav-item" id="WA">
+                            <a class="nav-link text-center" aria-current="page" href="https://wa.me/6287877108198" target="_blank">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <div id="highlights" class="row text-center mb-2 mx-0">
-        <div class="col">
+    <div id="highlights" class="text-center mb-2 mx-0">
+        <div>
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"
                 data-aos="fade-up" data-aos-duration="800">
                 <div class="carousel-indicators">
@@ -64,11 +67,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="contactUs" class="col d-flex">
-            <div id="imgContactUs">
-                <img src="./gambar/whatsapp 1.png" alt="Contact Us">
             </div>
         </div>
     </div>
@@ -253,6 +251,16 @@
     transition: 0.3s;
 }
 
+#WA {
+    background-color: #37ce19;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#WA:hover {
+    transform: scale(0.9);
+}
+
 /* HEADER */
 #title h1{
     font-weight: 600;
@@ -266,46 +274,6 @@
     background-repeat: no-repeat;
     background-image: url("./gambar/grafis1.png");
     background-position: start bottom;
-}
-
-/* CONTACT US */
-#contactUs {
-    position: fixed;
-    justify-content: end;
-    align-items: center;
-    height: 140vh;
-    margin-left: -30px;
-}
-
-#contactUs img {
-    width: 100px;
-    border-radius: 40%;
-    transition: 0.5s;
-}
-
-#contactUs img:hover {
-    cursor: pointer;
-    filter: brightness(0.7);
-}
-
-@media (max-width: 600px) {
-    #contactUs {
-        height: 167vh;
-        margin-left: -15px;
-    }
-    #contactUs img {
-        width: 70px;
-    }
-}
-
-@media (max-width: 1000px) {
-    #contactUs {
-        height: 162vh;
-        margin-left: -30px;
-    }
-    #contactUs img {
-        width: 70px;
-    }
 }
 
 /* CAROUSEL */
@@ -322,6 +290,7 @@
     height: 500px;
     object-fit: cover;
 }
+
 .carousel .carousel-indicators button {background-color: rgb(55, 53, 53);}
 .carousel .carousel-indicators button.active {background-color: rgb(5, 5, 5);}
 
@@ -390,13 +359,13 @@
 }
 #togglePersyaratan:hover {
     cursor: pointer;
-    opacity: 0.8;
+    transform: scale(0.95);
 }
 #toggleSyarat {
     display: block;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease-in-out;
 }
 #persyaratan h1 {
     color: #F7F5EB;
@@ -408,12 +377,10 @@
 }
 
 #visa {
-    z-index: 98;
     border-radius: 0 40px 0 0;
     color: #4d3617;
 }
 #asuransi {
-    z-index: 98;
     border-radius: 40px 0 0 0;
     color: #4d3617;
 }
