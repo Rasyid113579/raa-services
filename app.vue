@@ -65,25 +65,27 @@
             </div>
         </div>
     </div>
-    <div id="pemesanan" class="container text-center pb-2 pt-1">
-        <h1 class="mt-5">Pemesanan</h1>
-        <div class="d-flex justify-content-center mt-2">
-            <div class="row my-3">
-                <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="600">
-                    <a href=""><img src="./gambar/shopee 1.png" alt="shopee"></a>
+    <div id="pemesanan" class="text-center pb-2 pt-1">
+        <div class="container">
+            <h1 class="mt-5">Pemesanan</h1>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="row my-3">
+                    <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="600">
+                        <a href=""><img src="./gambar/shopee 1.png" alt="shopee"></a>
+                    </div>
+                    <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="800">
+                        <a href=""><img src="./gambar/tokopedia 1.png" alt="tokopedia"></a>
+                    </div>
+                    <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="https://wa.me/6287877108198"><img src="./gambar/whatsapp 1.png" alt="whatsapp"></a>
+                    </div>
+                    <div id="aboutus"></div>
                 </div>
-                <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="800">
-                    <a href=""><img src="./gambar/tokopedia 1.png" alt="tokopedia"></a>
-                </div>
-                <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="1000">
-                    <a href="https://wa.me/6287877108198"><img src="./gambar/whatsapp 1.png" alt="whatsapp"></a>
-                </div>
-                <div id="aboutus"></div>
             </div>
         </div>
     </div>
     <div id="aboutus" class="container text-center py-2">
-        <h1 class="mt-5">About RAA</h1>
+        <h1 class="mt-5 mb-3">About Rasyid</h1>
         <div id="descAboutus" class="mt-4"  data-aos="fade-up" data-aos-duration="800">
             <p class="py-4 px-4">RAA SERVICES hadir sebagai mitra perjalanan Anda, siap membantu mewujudkan rencana perjalanan ke Eropa dengan penuh kemudahan. Sebagai biro jasa dalam pemesanan asuransi perjalanan dan proses pembuatan visa, kami telah mengukir pengalaman yang tak terhitung jumlahnya. Profesionalisme kami tercermin dalam setiap langkah perjalanan Anda, memastikan Anda merasa aman. Jadikan kami partner setia Anda dalam meraih pengalaman berharga di Eropa dan jelajahi dunia dengan keyakinan penuh.</p>
         </div>
@@ -102,7 +104,7 @@
             <div id="persyaratan"></div>
         </div>
     </div>
-    <div id="persyaratan" class="container py-4">
+    <div id="persyaratan" class="container py-2">
         <div id="togglePersyaratan" class="pb-3 pt-1 mt-5" @click="isSyaratVisible = !isSyaratVisible"
             data-aos="flip-down" data-aos-duration="800">
             <h1 class="mt-4 text-center">Persyaratan</h1>
@@ -113,7 +115,7 @@
                     id="visa"
                     class="col py-3"
                     @click="toggleSyarat('visa')"
-                    :style="{ color: activeTab === 'visa' ? 'white' : '', backgroundColor: activeTab === 'visa' ? '#61441B' : '' }"
+                    :style="{ color: activeTab === 'visa' ? '#F7F5EB' : '', backgroundColor: activeTab === 'visa' ? '#61441B' : '' }"
                 >
                     <h4>VISA</h4>
                 </div>
@@ -121,7 +123,7 @@
                     id="asuransi"
                     class="col py-3"
                     @click="toggleSyarat('asuransi')"
-                    :style="{ color: activeTab === 'asuransi' ? 'white' : '', backgroundColor: activeTab === 'asuransi' ? '#61441B' : '' }"
+                    :style="{ color: activeTab === 'asuransi' ? '#F7F5EB' : '', backgroundColor: activeTab === 'asuransi' ? '#61441B' : '' }"
                 >
                     <h4>ASURANSI</h4>
                 </div>
@@ -169,15 +171,6 @@
 #body {
     background-color: #FAF1E4;
     font-family: 'Righteous', cursive;
-}
-
-/* BANNER */
-#banner {
-    width: 100%;
-    height: auto;
-}
-#banner1 {
-    width: 100%;
 }
 /* NAVBAR OFF CANVAS */
 .bd-placeholder-img {
@@ -278,6 +271,10 @@
 /* PEMESANAN */
 #pemesanan {
     color: #61441B;
+    background-image: url("./gambar/grafis1\ 1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
 }
 
 #pesan img {
@@ -338,16 +335,16 @@
 
 #syarat {
     color: #4d3617;
-    background-color: #9EB384;
+    background-color: #E5D5BD;
 }
 
 #visa {
     border-radius: 0 40px 0 0;
-    color: #61441B;
+    color: #4d3617;
 }
 #asuransi {
     border-radius: 40px 0 0 0;
-    color: #61441B;
+    color: #4d3617;
 }
 #buttonSyarat div:hover {
     cursor: pointer;
