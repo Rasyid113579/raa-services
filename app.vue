@@ -25,7 +25,7 @@
                             <a class="nav-link" aria-current="page" href="#aboutus">Tentang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://www.instagram.com/delizioso.tgr/" target="_blank">Syarat</a>
+                            <a class="nav-link" aria-current="page" href="#persyaratan">Syarat</a>
                         </li>
                     </ul>
                 </div>
@@ -33,14 +33,15 @@
         </div>
     </nav>
     <div id="highlights" class="text-center mb-2">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"
+            data-aos="fade-up" data-aos-duration="800">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-            <div class="carousel-inner" data-aos="fade-up" data-aos-duration="1300">
+            <div class="carousel-inner" data-aos="fade-up" data-aos-duration="800">
                 <div class="carousel-item active">
                     <div class="carousel-caption">
                         <img id="gambarProduk" src="./gambar/australia.jpg"/>
@@ -68,38 +69,45 @@
         <h1 class="mt-5">Pemesanan</h1>
         <div class="d-flex justify-content-center mt-2">
             <div class="row my-3">
-                <div id="pesan" class="col my-4 mx-4">
+                <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="600">
                     <a href=""><img src="./gambar/shopee 1.png" alt="shopee"></a>
                 </div>
-                <div id="pesan" class="col my-4 mx-4">
+                <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="800">
                     <a href=""><img src="./gambar/tokopedia 1.png" alt="tokopedia"></a>
                 </div>
-                <div id="pesan" class="col my-4 mx-4">
+                <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="1000">
                     <a href="https://wa.me/6287877108198"><img src="./gambar/whatsapp 1.png" alt="whatsapp"></a>
                 </div>
+                <div id="aboutus"></div>
             </div>
         </div>
     </div>
     <div id="aboutus" class="container text-center py-2">
         <h1 class="mt-5">About RAA</h1>
-        <div id="descAboutus" class="mt-4">
+        <div id="descAboutus" class="mt-4"  data-aos="fade-up" data-aos-duration="800">
             <p class="py-4 px-4">RAA SERVICES hadir sebagai mitra perjalanan Anda, siap membantu mewujudkan rencana perjalanan ke Eropa dengan penuh kemudahan. Sebagai biro jasa dalam pemesanan asuransi perjalanan dan proses pembuatan visa, kami telah mengukir pengalaman yang tak terhitung jumlahnya. Profesionalisme kami tercermin dalam setiap langkah perjalanan Anda, memastikan Anda merasa aman. Jadikan kami partner setia Anda dalam meraih pengalaman berharga di Eropa dan jelajahi dunia dengan keyakinan penuh.</p>
         </div>
     </div>
     <div id="ourServices" class="container text-center py-4">
         <h1 class="mt-5">Our Services</h1>
         <div class="row mt-4">
-            <div id="services" class="col my-4 mx-auto">
+            <div id="services" class="col my-4 mx-auto"
+            data-aos="fade-up" data-aos-duration="800">
                 <img src="./gambar/Travel_Insurance 1.png" alt="Travel Insurance">
             </div>
-            <div id="services" class="col my-4 mx-auto">
+            <div id="services" class="col my-4 mx-auto"
+                data-aos="fade-up" data-aos-duration="800">
                 <img src="./gambar/VISA 1.png" alt="Visa">
             </div>
+            <div id="persyaratan"></div>
         </div>
     </div>
     <div id="persyaratan" class="container py-4">
-        <h1 class="mt-4 text-center">Persyaratan</h1>
-        <div id="toggleSyarat" class="mt-5">
+        <div id="togglePersyaratan" class="pb-3 pt-1 mt-5" @click="isSyaratVisible = !isSyaratVisible"
+            data-aos="flip-down" data-aos-duration="800">
+            <h1 class="mt-4 text-center">Persyaratan</h1>
+        </div>
+        <div id="toggleSyarat" class="mt-5" :style="{ maxHeight: isSyaratVisible ? '1000px' : '0' }">
             <div id="buttonSyarat" class="row text-center">
                 <div
                     id="visa"
@@ -142,194 +150,7 @@
             </div>
         </div>
     </div>
-    <div id="product" class="">
-        <h1 style="font-weight: 650; font-size: 30px;" data-aos="fade-up" data-aos-duration="1000">Best Seller</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso5.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso1.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso2.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso3.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso5.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso1.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso2.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso3.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso5.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso1.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso2.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso3.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso4.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 my-2" data-aos="fade-up" data-aos-duration="1300">
-                    <div class="card">
-                        <img class="card-img-top" src="./gambar/delizioso5.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Rp 249.000</h5>
-                            <h5>Mukena Tazbiya Kids Flower Red Rose</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer" class="pt-4 pb-3">
+    <div id="footer" class="pt-4 pb-3 mt-5">
         <div class="container">
             <div class="row" style="font-weight: bold;">
                 <div id="footTitle" class="text-center">
@@ -495,53 +316,38 @@
     }
 }
 
-/* PRODUCT */
-.card {
-    border: none;
+/* PERSYARATAN */
+#togglePersyaratan {
+    background-color: #4d3617;
+    border-radius: 40px;
+    transition: 0.5s;
 }
-.card-body {
-    background-color: #F7F5EB;
+#togglePersyaratan:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
-.card-title {
-    color: #61441B;
-}
-#product h1 {
-    color: #61441B;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.card-img-top {
-    transition: transform 1s;
+#toggleSyarat {
+    display: block;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.5s ease;
 }
-.card-img-top:hover {
-    transform: scale(1.3);
+#persyaratan h1 {
+    color: #F7F5EB;
 }
 
-/* PERSYARATAN */
-#persyaratan h1 {
-    color: #61441B;
-}
 #syarat {
     color: #4d3617;
-}
-#visa {
-    border-radius: 40px 40px 0 0;
-    color: #61441B;
-}
-#syaratVisa {
     background-color: #9EB384;
-    border-radius: 0 0 40px 40px;
-    transition: height 1s;
+}
+
+#visa {
+    border-radius: 0 40px 0 0;
+    color: #61441B;
 }
 #asuransi {
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px 0 0 0;
     color: #61441B;
-}
-#syaratAsuransi {
-    background-color: #9EB384;
-    border-radius: 0 0 40px 40px;
-    transition: height 1s;
 }
 #buttonSyarat div:hover {
     cursor: pointer;
@@ -561,17 +367,25 @@
 </style>
 
 <script>
-export default {
-  data() {
-    return {
-      activeTab: 'visa', // Tab awal yang aktif
+    export default {
+        data() {
+            return {
+                activeTab: 'visa', // Tab awal yang aktif
+                isSyaratVisible: false, // Tambahkan data untuk melacak apakah elemen ditampilkan
+            };
+        },
+        methods: {
+            toggleSyarat(tab) {
+            if (this.activeTab === tab) {
+                // Jika tab yang sama ditekan lagi, sembunyikan elemen
+                this.isSyaratVisible = false;
+            } else {
+                this.activeTab = tab;
+                // Jika tab yang berbeda ditekan, tampilkan elemen
+                this.isSyaratVisible = true;
+            }
+            },
+        },
     };
-  },
-  methods: {
-    toggleSyarat(tab) {
-      // Fungsi ini akan dipanggil saat tombol VISA atau ASURANSI diklik
-      this.activeTab = tab;
-    },
-  },
-};
 </script>
+
