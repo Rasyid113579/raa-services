@@ -249,6 +249,8 @@
 /* HIGHLIGHTS */
 #highlights {
     padding-top: 85px;
+    background-image: url("./gambar/grafis1.png");
+    background-position: start bottom; 
 }
 
 /* CAROUSEL */
@@ -271,10 +273,6 @@
 /* PEMESANAN */
 #pemesanan {
     color: #61441B;
-    background-image: url("./gambar/grafis1\ 1.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top; 
 }
 
 #pesan img {
