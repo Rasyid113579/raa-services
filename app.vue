@@ -29,7 +29,7 @@
                         </li>
                         <li class="nav-item" id="WA">
                             <a class="nav-link text-center" aria-current="page" href="https://wa.me/6287877108198" target="_blank">
-                                <img src="./gambar/whatsapp2.png" alt="Whatsapp">Contact</a>
+                                <img src="https://i.ibb.co/pd7pJ61/whatsapp2.png" alt="Whatsapp">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -49,22 +49,22 @@
                 <div class="carousel-inner" data-aos="fade-up" data-aos-duration="800">
                     <div class="carousel-item active">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/australia.jpg"/>
+                            <img id="gambarProduk" src="./gambar/australia.png"/>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/america.jpg"/>
+                            <img id="gambarProduk" src="./gambar/america.png"/>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/dubai.jpg"/>
+                            <img id="gambarProduk" src="./gambar/dubai.png"/>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/netherlands.jpg"/>
+                            <img id="gambarProduk" src="./gambar/netherlands.png"/>
                         </div>
                     </div>
                 </div>

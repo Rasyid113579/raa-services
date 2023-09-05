@@ -2,12 +2,12 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "RAA Services | Travel Insurance & Visa",
+      title: "RAA Services | Travel Insurance & Jasa Visa",
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'RAA Services | Travel Insurance & Visa' },
-        { name: 'format-detection', content: 'telephone=no'}
+        { name: 'description', content: 'Perjalanan praktis & berkesan anda dengan menggunakan layanan RAA Services.' },
+        { name: 'keywords', content: 'chubb travel insurance, asuransi chubb, jasa visa, biro perjalanan visa, visa, asuransi, travel insurance, asuransi perjalanan, asuransi keluar negeri, asuransi eropa, visa america, visa belanda, visa dubai, jasa segala visa, jasa visa america, jasa visa belanda, jasa visa dubai' },
+        { name: 'google-site-verification', content: 'O6jTaHlgnI4elkK4qaS-WdNhB3p4u52p0enHvCDx7GM' },
+        { name: 'robots', content: "index, follow" }
       ],
       link: [
         {
