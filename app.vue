@@ -28,7 +28,8 @@
                             <a class="nav-link" aria-current="page" href="#persyaratan">Syarat</a>
                         </li>
                         <li class="nav-item" id="WA">
-                            <a class="nav-link text-center" aria-current="page" href="https://wa.me/6287877108198" target="_blank">Contact</a>
+                            <a class="nav-link text-center" aria-current="page" href="https://wa.me/6287877108198" target="_blank">
+                                <img src="./gambar/whatsapp2.png" alt="Whatsapp">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -96,15 +97,15 @@
         </div>
     </div>
     <div id="ourServices">
-        <div class="container text-center py-4">
+        <div class="container text-center pt-4">
             <h1 class="mt-5">Our Services</h1>
             <div class="row mt-4">
-                <div id="services" class="col my-4 mx-auto"
+                <div id="services" class="col mt-4 mb-2 mx-auto"
                 data-aos="fade-up" data-aos-duration="800">
                     <img src="./gambar/Travel_Insurance 1.png" alt="Travel Insurance">
                     <h1 class="mt-4">TRAVEL INSURANCE</h1>
                 </div>
-                <div id="services" class="col my-4 mx-auto"
+                <div id="services" class="col mt-4 mb-2 mx-auto"
                     data-aos="fade-up" data-aos-duration="800">
                     <img src="./gambar/VISA 1.png" alt="Visa">
                     <h1 class="mt-4">VISA</h1>
@@ -114,7 +115,7 @@
         </div>
     </div>
     <div id="boxSyarat">
-        <div id="persyaratan" class="container pt-2 pb-5">
+        <div id="persyaratan" class="container pt-5 pb-5">
             <div id="togglePersyaratan" class="pb-3 pt-1 mt-4" @click="isSyaratVisible = !isSyaratVisible"
                 data-aos="flip-down" data-aos-duration="800">
                 <h1 class="mt-4 text-center">Persyaratan</h1>
@@ -252,9 +253,13 @@
 }
 
 #WA {
-    background-color: #37ce19;
+    background-color: #668e5e;
     border-radius: 10px;
     transition: 0.3s;
+}
+#WA img {
+    width: 30px;
+    margin-right: 10px;
 }
 
 #WA:hover {
