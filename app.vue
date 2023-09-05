@@ -29,7 +29,7 @@
                         </li>
                         <li class="nav-item" id="WA">
                             <a class="nav-link text-center" aria-current="page" href="https://wa.me/6287877108198" target="_blank">
-                                <img src="./gambar/whatsapp2.png" alt="Whatsapp">Contact</a>
+                                <img src="https://i.ibb.co/pd7pJ61/whatsapp2.png" alt="Whatsapp">Contact</a>
                         </li>
                     </ul>
                 </div>
