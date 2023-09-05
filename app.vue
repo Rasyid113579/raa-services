@@ -49,22 +49,22 @@
                 <div class="carousel-inner" data-aos="fade-up" data-aos-duration="800">
                     <div class="carousel-item active">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/australia.jpg"/>
+                            <img id="gambarProduk" src="./gambar/australia.png"/>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/america.jpg"/>
+                            <img id="gambarProduk" src="./gambar/america.png"/>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/dubai.jpg"/>
+                            <img id="gambarProduk" src="./gambar/dubai.png"/>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/netherlands.jpg"/>
+                            <img id="gambarProduk" src="./gambar/netherlands.png"/>
                         </div>
                     </div>
                 </div>
