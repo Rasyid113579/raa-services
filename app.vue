@@ -77,13 +77,13 @@
             <div class="d-flex justify-content-center mt-2">
                 <div id="boxPesan" class="row my-3">
                     <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="600">
-                        <a href=""><img src="./gambar/shopee 1.png" alt="shopee"></a>
+                        <a href=""><img src="./gambar/shopee1.png" alt="shopee"></a>
                     </div>
                     <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="800">
-                        <a href=""><img src="./gambar/tokopedia 1.png" alt="tokopedia"></a>
+                        <a href=""><img src="./gambar/tokopedia1.png" alt="tokopedia"></a>
                     </div>
                     <div id="pesan" class="col my-4 mx-4" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="https://wa.me/6287877108198"><img src="./gambar/whatsapp 1.png" alt="whatsapp"></a>
+                        <a href="https://wa.me/6287877108198"><img src="./gambar/whatsapp1.png" alt="whatsapp"></a>
                     </div>
                     <div id="aboutus"></div>
                 </div>
@@ -102,12 +102,12 @@
             <div class="row mt-4">
                 <div id="services" class="col mt-4 mb-2 mx-auto"
                 data-aos="fade-up" data-aos-duration="800">
-                    <img src="./gambar/Travel_Insurance 1.png" alt="Travel Insurance">
+                    <img src="./gambar/Travel_Insurance1.png" alt="Travel Insurance">
                     <h1 class="mt-4">TRAVEL INSURANCE</h1>
                 </div>
                 <div id="services" class="col mt-4 mb-2 mx-auto"
                     data-aos="fade-up" data-aos-duration="800">
-                    <img src="./gambar/VISA 1.png" alt="Visa">
+                    <img src="./gambar/VISA1.png" alt="Visa">
                     <h1 class="mt-4">VISA</h1>
                 </div>
                 <div id="persyaratan"></div>
