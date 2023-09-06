@@ -7,7 +7,7 @@
   <div id="body">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large">
         <div class="container">
-            <a class="navbar-brand text-bold">RAA SERVICES</a>
+            <a id="logo" class="navbar-brand text-bold"><img src="./gambar/raaLogo.png">RAA SERVICES</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -246,6 +246,10 @@
 .nav-link:hover {
     color: #61441B;
     opacity: 1;
+}
+#logo img {
+    width: 30px;
+    margin-right: 10px;
 }
 .dropdown-item:hover {
     color: #61441B;
