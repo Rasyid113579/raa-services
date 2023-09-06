@@ -157,7 +157,8 @@
                             1. Paspor<br>
                             2. Foto KTP dan KK<br>
                             3. Jadwal perjalanan<br>
-                            4. Bukti pemesanan tiket atau tiket pesawat
+                            4. Bukti pemesanan tiket atau tiket pesawat<br>
+                            5. Alamat Email
                         </h5>
                     </div>
                 </div>
