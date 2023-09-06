@@ -18,7 +18,7 @@ export default defineNuxtConfig({
           /* FOR SET UP IMG ICON */
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/tokopedia 1.png'
+          href: '/raaLogo.png'
         },
         {
           rel: 'stylesheet',
