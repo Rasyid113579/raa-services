@@ -1,6 +1,8 @@
 <!--
     use this to install AOS animation 
     npm i --save-dev @types/aos
+
+    npx nuxi generate : 
 -->
 
 <template>
@@ -292,7 +294,7 @@
 }
 @media (max-width: 600px) {
     .carousel-item {
-        height: 30rem;
+        height: 35rem;
     }
 }
 #gambarProduk {
