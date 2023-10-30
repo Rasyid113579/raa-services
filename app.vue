@@ -38,39 +38,31 @@
             </div>
         </div>
     </nav>
-    <div id="highlights" class="text-center mb-2 mx-0">
-        <div>
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"
-                data-aos="fade-up" data-aos-duration="800">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner" data-aos="fade-up" data-aos-duration="800">
-                    <div class="carousel-item active">
-                        <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/australia.png"/>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/america.png"/>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/dubai.png"/>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption">
-                            <img id="gambarProduk" src="./gambar/netherlands.png"/>
-                        </div>
-                    </div>
-                </div>
+    <div class="highlights">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="./gambar/america.png" style="width:100%">
+                <div class="text">RAA SERVICES</div>
             </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="./gambar/dubai.png" style="width:100%">
+                <div class="text">RAA SERVICES</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="./gambar/australia.png" style="width:100%">
+                <div class="text">RAA SERVICES</div>
+            </div>
+            <a class="prev" @click="plusSlides(-1)">❮</a>
+            <a class="next" @click="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" @click="currentSlide(1)"></span> 
+            <span class="dot" @click="currentSlide(2)"></span> 
+            <span class="dot" @click="currentSlide(3)"></span>
         </div>
     </div>
     <div id="pemesanan" class="text-center pb-2 pt-1">
@@ -187,6 +179,7 @@
     background-color: #FAF1E4;
     font-family: 'Righteous', cursive;
 }
+
 /* NAVBAR OFF CANVAS */
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -258,7 +251,6 @@
     color: #61441B;
     transition: 0.3s;
 }
-
 #WA {
     background-color: #668e5e;
     border-radius: 10px;
@@ -268,7 +260,6 @@
     width: 30px;
     margin-right: 10px;
 }
-
 #WA:hover {
     transform: scale(0.9);
 }
@@ -279,33 +270,118 @@
     color: #61441B;
 }
 
-/* HIGHLIGHTS */
-#highlights {
-    padding-top: 85px;
-    background-size: 280px;
-    background-repeat: no-repeat;
-    background-image: url("./gambar/grafis1.png");
-    background-position: start bottom;
-}
-
 /* CAROUSEL */
-.carousel-item {
-    height: 32rem;
+
+.highlights {
+    padding-top: 70px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-image: url("./gambar/grafis2.png");
+    background-position: start bottom;
+    margin-bottom: 30px;
 }
-@media (max-width: 600px) {
-    .carousel-item {
-        height: 35rem;
-    }
+.mySlides {
+    display: none;
 }
-#gambarProduk {
-    width: 100%;
-    height: 500px;
+.mySlides img {
+    vertical-align: middle;
+    max-height: 500px;
     object-fit: cover;
 }
 
-.carousel .carousel-indicators button {background-color: rgb(55, 53, 53);}
-.carousel .carousel-indicators button.active {background-color: rgb(5, 5, 5);}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1130px;
+    position: relative;
+    margin: auto;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #4d3617;
+    opacity: 0.7;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    opacity: 1;
+}
+
+/* Caption text */
+.text {
+    color: #FAF1E4;
+    font-size: 45px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #59644a;
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 15px;
+        bottom: 0px;
+    }
+    .highlights {
+        background-size: 200px;
+        background-position: 0% 100%;
+    }
+    .mySlides img {
+        height: 300px;
+    }
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
 /* PEMESANAN */
 #pemesanan {
     color: #61441B;
@@ -417,22 +493,53 @@
     export default {
         data() {
             return {
+                slideIndex: 1,
                 activeTab: 'visa', // Tab awal yang aktif
                 isSyaratVisible: false, // Tambahkan data untuk melacak apakah elemen ditampilkan
             };
         },
+        mounted() {
+            this.showSlides(this.slideIndex);
+            setInterval(() => {
+                this.plusSlides(1); // Otomatis ganti slide setiap 1.5 detik
+            }, 2000);
+        },
         methods: {
             toggleSyarat(tab) {
-            if (this.activeTab === tab) {
-                // Jika tab yang sama ditekan lagi, sembunyikan elemen
-                this.isSyaratVisible = false;
-            } else {
-                this.activeTab = tab;
-                // Jika tab yang berbeda ditekan, tampilkan elemen
-                this.isSyaratVisible = true;
-            }
+                if (this.activeTab === tab) {
+                    // Jika tab yang sama ditekan lagi, sembunyikan elemen
+                    this.isSyaratVisible = false;
+                } else {
+                    this.activeTab = tab;
+                    // Jika tab yang berbeda ditekan, tampilkan elemen
+                    this.isSyaratVisible = true;
+                }
+            },
+            plusSlides(n) {
+                this.showSlides((this.slideIndex += n));
+            },
+            currentSlide(n) {
+                this.showSlides((this.slideIndex = n));
+            },
+            showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    this.slideIndex = 1;
+                }
+                if (n < 1) {
+                    this.slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[this.slideIndex - 1].style.display = "block";
+                dots[this.slideIndex - 1].className += " active";
             },
         },
     };
 </script>
-
