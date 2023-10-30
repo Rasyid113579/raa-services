@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="highlights">
+    <div class="highlights" data-aos="fade-up" data-aos-duration="500">
         <div class="slideshow-container">
             <div class="mySlides">
                 <div class="numbertext">1 / 3</div>
