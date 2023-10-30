@@ -502,7 +502,7 @@
             this.showSlides(this.slideIndex);
             setInterval(() => {
                 this.plusSlides(1); // Otomatis ganti slide setiap 1.5 detik
-            }, 2000);
+            }, 3000);
         },
         methods: {
             toggleSyarat(tab) {
